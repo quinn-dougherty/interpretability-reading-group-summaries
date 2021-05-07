@@ -8,6 +8,7 @@ To begin from square one, we need to build up a _desiderata_ so that we know whe
 
 1. **Trust**: we want to know not only that the model is accurate but that the dataset isn't lending legitimacy to what would be criticized as a bias if a human was making the same predictions the old fashioned way, at least that's what I could extract from the example given of police allocation based on crime rates; we don't tend to trust models that say "send lots of cops to neighborhood x" because we know that a positive feedback loop of more cops -> more arrests made -> higher arrest rate in model -> more cops -> etc. can run away from us. I don't think this example portrays what Lipton is trying to say with this section, when you observe the following quote 
 > we might care not only about _how often a model is right_ but also _for which examples it is right_. If the model tends to make mistakes in regions of input space where humans also make mistakes, and is typically accurate when humans are accurate, then it may be considered trustworthy in the sense that there is no expected cost of relinquishing control.
+
 I think an adjacent word to trust is _legitimacy_, but that is also a word that feels heavier than it is. A _user_ of a model should petition for it's legitimacy not by pleading to properties of the model, but by showing the **social process that created the dataset and into which they want to implement decisions is rigorous, sensitive, and free of runaway feedback loops**. 
 2. **Causality**: supervised learning learns association. Given a static dataset that you can't intervene in, it can be very difficult to ascertain direction of the causal graph absent any subject matter expertise or common sense. 
 > One might hope, however, that by interpreting supervised learning models, we could generate hypotheses that scientists could then test experimentally.
@@ -53,5 +54,5 @@ Areas of potential (as of this writing 2017)
 ## Quinn's opinion
 
 - I think trust doesn't belong in the desiderata. Trust is property of the social process in which a model is embedded, not a property of the model. 
-- it's interesting to claim that transferability (which I think sounds a lot like OODR) is a requisite of interpretability. It seems unrelated to me. I don't know if goodharting (which presents itself as a special class of adversarial OODR failure) is really so antisynchronized with interpretability.
+- it's interesting to claim that transferability (which I think sounds a lot like OODR) is a requisite of interpretability. It seems unrelated to me. I don't know if goodharting (which presents itself as a special class of adversarial OODR failure) is really so antisynchronized with interpretability
 - I missed why exactly NNs have a "clear advantage" in post-hoc explanation. 
