@@ -1,5 +1,7 @@
 # The Mythos of Model Interpretability
 
+[paper](https://arxiv.org/abs/1606.03490)
+
 We often consider "interpretability" as an intuitively meaningful concept, but in fact people mean many different things when they use the word. This paper tries to make the term interpretability more precise by describing many of these concepts. What are the goals of interpretability research? What does it mean for a model to be interpretable? And how have people tried to make models more interpretable?
 
 One goal of interpretability research is to build "trust" with a model, although there are several notions of what this means as well. It might mean that the model will perform well given new data that it hasn't seen before of the same kind as its test data. It might mean that humans feel subjectively comfortable with the model and expect it to make good decisions on their behalf. 
